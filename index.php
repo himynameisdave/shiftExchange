@@ -237,12 +237,25 @@
 		$shiftDate = $row['shift_date'];
 		$hrs = $row['shift_length'];
 		
+		$empId = $row['employee_id'];
+		
 		echo "<!--NEW SHIFT POST-->
 			<div class='post'>
 				<a href='' class='poolIcon ".$pool."'></a>
 				<h3 class='postHead'>".$type."</h2>
 				<div class='postCont'>
-				<p class='content'>***SOMEONE*** is looking for someone to take their ".$startTime." - ".$endTime." guarding shift on ".$shiftDate."</p>	
+				<p class='content'>";
+				
+		$nameFinder = mysql_query("SELECT first_name, last_name FROM employees WHERE employee_id = $empId");	
+		while($moreRow = mysql_fetch_array($nameFinder)){
+			$fName = $moreRow['first_name'];
+			$lName = $moreRow['last_name'];
+			
+			echo $fName." ".$lName;
+		
+		};		
+		
+		echo	" is looking for someone to take their ".$startTime." - ".$endTime." guarding shift on ".$shiftDate."</p>	
 				<h5 class='hrsNum'>$hrs<span class='hrs'> hrs</span></h5>				
 			</div>
 			
