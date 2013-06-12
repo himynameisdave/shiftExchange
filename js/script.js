@@ -81,6 +81,9 @@ function	showPostShift()		{
 	
 	$('#postShift').css('display','block');
 	$('#postShift').addClass('fadeIn');
+	
+	$('.close').bind('click',hidePostShift);
+	
 	setTimeout(function(){
 	
 		$('#postShift').removeClass('fadeIn')
@@ -88,7 +91,27 @@ function	showPostShift()		{
 	}, 1000);
 	
 	
+	
 };//	End showPostShift
+
+
+
+function	hidePostShift()		{
+	
+	$('.close').unbind('click',hidePostShift);
+
+	$('#postShift').addClass('fadeOut');	
+			
+	setTimeout(function(){
+	
+		$('#postShift').css('display','none');
+		$('#postShift').removeClass('fadeOut')
+		
+	}, 500);
+
+	$('#postClicker').bind('click',showPostShift);
+	
+};//	End hidePostShift
 
 
 function	showRegister()		{
@@ -97,6 +120,9 @@ function	showRegister()		{
 
 	$('#register').css('display','block');
 	$('#register').addClass('fadeIn');
+	
+	$('.close').bind('click',hideRegister);
+	
 	setTimeout(function(){
 	
 		$('#register').removeClass('fadeIn')
@@ -106,6 +132,23 @@ function	showRegister()		{
 	
 };//	End of shoRegister function
 
+
+function hideRegister()			{
+	
+	$('.close').unbind('click',hideRegister);
+	
+	$('#register').addClass('fadeOut');
+	
+	setTimeout(function(){
+	
+		$('#register').css('display','none');
+		$('#register').removeClass('fadeOut')
+		
+	}, 500);
+	
+	$('#registerClick').bind('click',showRegister);
+	
+};//	End of hideRegister function
 
 
 var isMenuDown = false;

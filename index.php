@@ -66,26 +66,26 @@
 		<a href='#' class='close'>&#88;</a>
 		
 		<div class='postCont'>			
-			<form id="registerForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+			<form id="registerForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" autocomplete="off">
 				<fieldset>
 					<label for='firstName'>First Name:</label>
-					<input name='firstName' type='text' autocomplete="no" class='postInput' autofocus	/>
+					<input name='firstName' type='text' autocomplete="off" class='postInput' autofocus	/>
 					
 					<label for='lastName'>Last Name:</label>
-					<input name='lastName' type='text' autocomplete="no" class='postInput'	/>
+					<input name='lastName' type='text' autocomplete="off" class='postInput'	/>
 				</fieldset>
 				
 				<fieldset>
 					<label for='email'>E-mail:</label>
-					<input name='regEmail' type='text' autocomplete="no" class='postInput'	/>
+					<input name='regEmail' type='text' autocomplete="off" class='postInput'	/>
 				</fieldset>
 				
 				<fieldset>
 					<label for='password1'>Password:</label>
-					<input name='regPassword1' type='password' autocomplete="no" class='postInput'	/>
+					<input name='regPassword1' type='password' autocomplete="off" class='postInput'	/>
 					
 					<label for='password2'>Again, please:</label>
-					<input name='regPassword2' type='password' autocomplete="no" class='postInput'	/>
+					<input name='regPassword2' type='password' autocomplete="off" class='postInput'	/>
 				</fieldset>
 				
 				<input type="submit" name="registerSubmit" value="Register Me!" />
@@ -104,7 +104,7 @@
 		
 		<div class="postCont">
 
-			<form id="postShiftForm" method="post" action="#">
+			<form id="postShiftForm" method="post" action="#" autocomplete="off">
 				
 				<fieldset>
 					<label for='typeDropdown'>Shift Type:</label>
