@@ -119,9 +119,9 @@ class Login
   public function showErrors()
   {
   	if(isset($this->_errors[0])){
-	  echo "<h3>Errors</h3>";
+	  echo "<h3 class='whoops'>Whoops!</h3>";
       foreach($this->_errors as $key=>$value)
-    	echo $value."<br>";
+    	echo "<p class='errorText'>".$value."</p>";
 	}
   }
 }

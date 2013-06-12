@@ -8,6 +8,7 @@ function		init()		{
 
 	$('#registerClick').bind('click',showRegister);
 	
+	
 	$(window).resize(function() {
 		
 		if( $(window).width() >= 785){

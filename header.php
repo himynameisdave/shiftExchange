@@ -46,7 +46,5 @@
 		<p class="mainBlurb">Welcome to the Town of Ajax Aquatics Shift Exchange. Please sign up or login to take or post a shift! </p>
 		
 		<button type='button' id='menuBtn'>Menu</button>
-		
-<!--		<h4 class='profName pullDown'>MENU</h4><h4 id='menuPlus' class='profName pullDown'>&#43;</h4>	-->
-		
+				
 		<div id="profile">

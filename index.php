@@ -26,7 +26,6 @@
     $showProfile = 1;
     }
   else{
-    $login->showErrors();
     $showProfile = 0;
    }
    if(isset($_GET['logout'])){
@@ -45,7 +44,7 @@
 		require_once("profile.php");
 		
 	}else{
-		
+    	$login->showErrors();
 		require_once("loginForm.php");
 		
 	}
@@ -64,7 +63,7 @@
 				
 		<h3 class="postHead">Register</h3>
 		
-		<div class='close'><div></div></div>
+		<a href='#' class='close'>&#88;</a>
 		
 		<div class='postCont'>			
 			<form id="registerForm" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -100,6 +99,9 @@
 	<div id="postShift" class='post'>
 	
 		<h3 class="postHead">Post A Shift</h3>
+		
+		<a href='#' class='close'>&#88;</a>
+		
 		<div class="postCont">
 
 			<form id="postShiftForm" method="post" action="#">
