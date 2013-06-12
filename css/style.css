@@ -430,10 +430,11 @@ footer						{
 #postShiftForm input[type='submit'],
 #registerForm input[type='submit']	{
 	margin: 				10px auto;
-	height: 				25px;
+	display: 				block;
+	height: 				40px;
 	font-family: 			"Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	letter-spacing: 		-0.03em;
-	width: 					100%;
+	width: 					85%;
 	font-size: 				0.9em;
 	border-radius: 			4px;
 	-webkit-border-radius:	4px;
